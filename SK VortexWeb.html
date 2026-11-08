@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SK VortexWeb – Digital Innovation | Websites with an AI chat assistant</title>
+<meta name="description" content="SK VortexWeb builds fast, mobile-first websites for local businesses and adds an AI chat assistant that answers customers 24/7. Get a free first mockup on WhatsApp.">
+<meta property="og:title" content="SK VortexWeb – Digital Innovation">
+<meta property="og:description" content="Fast, mobile-first websites with an AI chat assistant for local businesses. Free first mockup.">
+<meta property="og:type" content="website"><meta property="og:image" content="logo.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"SK VortexWeb","slogan":"Digital Innovation","description":"Fast, mobile-first websites and AI chat assistants for local businesses.","telephone":"+917373096166","email":"skvortexweb@gmail.com","sameAs":["https://www.instagram.com/skvortexweb"]}</script>
+<meta name="theme-color" content="#0A1F44">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:#F4F7FB;color:#0A1F44}
+:focus-visible{outline:3px solid #19C3B1;outline-offset:2px}
+.grad{background:linear-gradient(135deg,#1B4F9C,#19C3B1)}
+.em{border-radius:50%;overflow:hidden;background:#F6F8FA;flex:none;display:inline-block}
+.em img{width:100%;height:100%;object-fit:cover;object-position:center}
+.chip{font-size:9px;font-weight:800;color:#fff;padding:1px 5px;border-radius:99px;background:linear-gradient(135deg,#1B4F9C,#19C3B1)}
+.card{transition:transform .25s,box-shadow .25s}.card:hover{transform:translateY(-6px);box-shadow:0 16px 36px -12px rgba(10,31,68,.35)}
+.msg{max-width:85%;padding:8px 12px;border-radius:14px;font-size:14px;line-height:1.4;animation:pop .25s}
+.msg.u{background:#1B4F9C;color:#fff;margin-left:auto;border-bottom-right-radius:4px}
+.msg.b{background:#fff;color:#0A1F44;border-bottom-left-radius:4px;box-shadow:0 1px 3px #0002}
+.msg a{color:#0e8f82;font-weight:700;text-decoration:underline}
+@keyframes pop{from{opacity:0;transform:translateY(6px)}to{opacity:1}}
+.dots span{display:inline-block;width:6px;height:6px;margin:0 2px;border-radius:50%;background:#8aa;animation:bl 1s infinite}
+.dots span:nth-child(2){animation-delay:.2s}.dots span:nth-child(3){animation-delay:.4s}
+@keyframes bl{50%{opacity:.2;transform:translateY(-3px)}}
+@keyframes pulse2{0%{box-shadow:0 0 0 0 #19C3B188}100%{box-shadow:0 0 0 18px #19C3B100}}
+#chatBtn{animation:pulse2 2s infinite}
+@keyframes fl{50%{transform:translateY(-10px) rotate(4deg)}}.fl{animation:fl 5s ease-in-out infinite}
+details>summary{cursor:pointer;list-style:none}details>summary::after{content:"+";float:right;font-weight:800;color:#19C3B1}details[open]>summary::after{content:"–"}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="bg-[#0A1F44] text-white text-center text-xs font-semibold py-1.5">Powered by AI</div>
+
+<header class="sticky top-0 z-40 bg-white/90 backdrop-blur shadow-sm">
+ <nav class="max-w-6xl mx-auto px-4 h-14 flex items-center gap-3" aria-label="Main">
+  <a href="#top" class="flex items-center gap-2 font-extrabold"><span class="em w-9 h-9 logo"></span>SK VortexWeb <span class="chip">AI</span></a>
+  <div class="hidden md:flex gap-5 ml-auto text-sm font-semibold" id="links"></div>
+  <a class="wa hidden md:inline-block grad text-white text-sm font-bold px-4 py-2 rounded-full" data-m="Hi SK VortexWeb, I saw your website and I’d like a free demo for my business.">Free demo</a>
+  <button id="burger" class="md:hidden ml-auto p-2 rounded-lg border" aria-label="Open menu" aria-expanded="false">☰</button>
+ </nav>
+ <div id="mob" class="hidden md:hidden px-4 pb-4 flex-col gap-3 font-semibold"></div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="relative overflow-hidden bg-white text-[#0A1F44]">
+ <canvas id="cv" class="absolute inset-0 w-full h-full" aria-hidden="true"></canvas>
+ <div class="relative max-w-6xl mx-auto px-4 py-14 md:py-20 grid md:grid-cols-2 gap-10 items-center">
+  <div>
+   <span class="em w-20 h-20 logo fl"></span>
+   <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mt-4">Websites that talk to your customers while you sleep.</h1>
+   <p class="mt-4 text-slate-600 max-w-md">Fast, mobile-first pages for local businesses, with an AI chat assistant that answers questions 24/7 and sends serious customers straight to you.</p>
+   <div class="flex flex-wrap gap-3 mt-6">
+    <a class="wa grad text-white font-bold px-6 py-3 rounded-full" data-m="Hi SK VortexWeb, I saw your website and I’d like a free demo for my business.">Get my free demo</a>
+    <a href="#work" class="border-2 border-[#1B4F9C] text-[#1B4F9C] font-bold px-6 py-3 rounded-full hover:bg-[#1B4F9C]/10">See the work</a>
+   </div>
+   <ul class="flex flex-wrap gap-2 mt-6 text-sm font-semibold">
+    <li class="bg-[#1B4F9C]/10 text-[#1B4F9C] rounded-full px-3 py-1">⚡ Under 1.5s load</li><li class="bg-[#1B4F9C]/10 text-[#1B4F9C] rounded-full px-3 py-1">💬 24/7 AI replies</li><li class="bg-[#1B4F9C]/10 text-[#1B4F9C] rounded-full px-3 py-1">🎁 Free first mockup</li></ul>
+  </div>
+  <div class="bg-[#F4F7FB] text-[#0A1F44] rounded-3xl shadow-2xl ring-1 ring-slate-200 overflow-hidden" aria-label="Live AI chat demo">
+   <div class="grad text-white px-4 py-3 flex items-center gap-2"><span class="em w-8 h-8 logo"></span><div class="text-sm font-bold" id="dName">Bakery</div><span class="ml-auto text-xs">● online</span></div>
+   <div id="demo" class="h-72 p-3 flex flex-col gap-2 overflow-hidden" aria-live="off"></div>
+  </div>
+ </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="max-w-6xl mx-auto px-4 py-16">
+ <h2 class="text-3xl font-extrabold">What I build for you</h2>
+ <p class="text-slate-600 mt-1">Tap a card to see exactly what you get.</p>
+ <div id="svc" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-8"></div>
+ <div id="detail" class="mt-8 rounded-3xl bg-white p-6 md:p-8 shadow-lg border-l-8" tabindex="-1" aria-live="polite"></div>
+</section>
+
+<!-- WORK -->
+<section id="work" class="bg-white py-16"><div class="max-w-6xl mx-auto px-4">
+ <h2 class="text-3xl font-extrabold">My work</h2>
+ <p class="text-slate-600 mt-1">Concept designs for different businesses. Tap one to open a live mini demo.</p>
+ <div id="wk" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-8"></div>
+</div></section>
+
+<!-- PROCESS -->
+<section id="process" class="max-w-6xl mx-auto px-4 py-16">
+ <h2 class="text-3xl font-extrabold">How it works</h2>
+ <ol id="steps" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-8"></ol>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="bg-[#0A1F44] text-white py-16"><div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-10 items-center">
+ <div class="flex justify-center"><span class="em w-48 h-48 md:w-60 md:h-60 logo fl ring-4 ring-[#19C3B1]/50"></span></div>
+ <div class="md:col-span-2">
+  <h2 class="text-3xl font-extrabold">Hi, I’m <span id="owner"></span></h2>
+  <div id="bio" class="mt-4 space-y-3 text-slate-200"></div>
+  <div class="grid sm:grid-cols-3 gap-3 mt-6">
+   <div class="bg-white/10 rounded-2xl p-4"><b>⚡ Fast pages</b><p class="text-sm text-slate-300">Light code, quick loading, smooth on phones.</p></div>
+   <div class="bg-white/10 rounded-2xl p-4"><b>🤝 Honest communication</b><p class="text-sm text-slate-300">Clear answers, no jargon, no surprises.</p></div>
+   <div class="bg-white/10 rounded-2xl p-4"><b>💬 Direct WhatsApp support</b><p class="text-sm text-slate-300">You talk to the developer, not a call centre.</p></div>
+  </div>
+ </div>
+</div></section>
+
+<!-- FAQ -->
+<section id="faq" class="max-w-3xl mx-auto px-4 py-16">
+ <h2 class="text-3xl font-extrabold">Questions, answered</h2>
+ <div id="faqL" class="mt-6 space-y-3"></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="px-4 pb-16"><div class="max-w-4xl mx-auto rounded-3xl p-8 md:p-12 text-center text-white" style="background:linear-gradient(135deg,#0A1F44,#1B4F9C 55%,#19C3B1)">
+ <h2 class="text-3xl md:text-4xl font-extrabold">Ready for a website that works while you rest?</h2>
+ <p class="mt-3 text-slate-100">Message me for a free first mockup. You’ll talk directly to the developer.</p>
+ <div class="flex flex-wrap justify-center gap-3 mt-7">
+  <a class="wa bg-[#25D366] text-[#05301a] font-extrabold px-6 py-3 rounded-full" data-m="Hi SK VortexWeb, I saw your website and I’d like a free demo for my business.">WhatsApp me</a>
+  <a class="ig bg-white text-[#0A1F44] font-extrabold px-6 py-3 rounded-full" target="_blank" rel="noopener">Instagram</a>
+  <a class="mail bg-white/15 border border-white/50 font-extrabold px-6 py-3 rounded-full">Email</a>
+ </div>
+</div></section>
+</main>
+
+<footer class="bg-[#0A1F44] text-slate-300 py-10"><div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row gap-6 md:items-center justify-between">
+ <div class="flex items-center gap-3"><span class="em w-12 h-12 logo"></span><div><b class="text-white">SK VortexWeb</b><div class="text-sm">Digital Innovation</div></div></div>
+ <div class="flex flex-wrap gap-4 text-sm font-semibold">
+  <a class="wa hover:text-white" data-m="Hi SK VortexWeb, I have a question.">WhatsApp +91 73730 96166</a>
+  <a class="ig hover:text-white" target="_blank" rel="noopener">Instagram @skvortexweb</a>
+  <a class="mail hover:text-white">skvortexweb@gmail.com</a></div>
+ <p class="text-xs">© <span id="yr"></span> SK VortexWeb. All rights reserved.</p>
+</div></footer>
+
+<!-- PORTFOLIO MODAL -->
+<div id="modal" class="fixed inset-0 z-50 hidden bg-black/60 p-3 md:p-8" role="dialog" aria-modal="true" aria-label="Sample build preview">
+ <div class="bg-white rounded-3xl max-w-3xl mx-auto h-full flex flex-col overflow-hidden">
+  <div class="flex items-center gap-2 px-4 py-2 border-b text-sm"><b id="mTitle"></b><span class="chip">Sample build</span>
+   <button id="mClose" class="ml-auto px-3 py-1 rounded-full bg-slate-100 font-bold" aria-label="Close preview">✕ Close</button></div>
+  <div id="mBody" class="overflow-y-auto flex-1"></div>
+ </div>
+</div>
+
+<!-- CHAT WIDGET -->
+<button id="chatBtn" class="fixed bottom-4 right-4 z-40 w-16 h-16 rounded-full ring-4 ring-[#19C3B1] bg-[#0A1F44]" aria-label="Open VortexWeb AI chat">
+ <span class="em w-full h-full logo"></span><span class="chip absolute -top-1 -right-1">AI</span></button>
+<section id="chat" class="fixed z-50 bottom-0 right-0 sm:bottom-4 sm:right-4 w-full sm:w-96 h-[85vh] sm:h-[32rem] bg-[#F4F7FB] sm:rounded-3xl shadow-2xl hidden flex-col overflow-hidden" aria-label="Chat with VortexWeb AI">
+ <div class="grad text-white px-4 py-3 flex items-center gap-2"><span class="em w-9 h-9 logo"></span>
+  <div><div class="font-bold leading-tight">VortexWeb AI</div><div class="text-xs">SK VortexWeb assistant · online</div></div>
+  <button id="cClose" class="ml-auto text-xl px-2" aria-label="Close chat">✕</button></div>
+ <div id="log" class="flex-1 overflow-y-auto p-3 flex flex-col gap-2" aria-live="polite"></div>
+ <div id="chips" class="px-3 pb-2 flex gap-2 overflow-x-auto"></div>
+ <form id="cf" class="p-3 flex gap-2 bg-white border-t"><input id="ci" class="flex-1 border rounded-full px-4 py-2 text-sm" placeholder="Type your question…" aria-label="Your message" maxlength="300" autocomplete="off"><button class="grad text-white font-bold px-4 rounded-full">Send</button></form>
+</section>
+
+<script>
+/* ============ CONFIG – edit these ============ */
+const CONFIG={
+ phone:"917373096166", phoneShow:"+91 73730 96166",
+ instagram:"https://www.instagram.com/skvortexweb", email:"skvortexweb@gmail.com",
+ heroVideos:[], // optional: ["video1.mp4"] short muted clips (2–4 MB each); leave empty for the built-in animated scenes
+ chatEndpoint:"", // paste your Cloudflare Worker URL here for real AI replies (optional)
+ owner:"Sri Kumaran",
+ bio:["I love coding and I’m building toward a career in game development. My first website came from learning HTML at school, and it sparked my passion for web pages. Today AI tools help me build faster and better.",
+  "I started SK VortexWeb to keep learning and help local businesses get online with something fast and affordable. When you message this page, you talk directly to me."]
+};
+/* ============ helpers ============ */
+const LOGO="data:image/jpeg;base64,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"; // your logo is embedded here, so it always shows, even without logo.png
+document.querySelector('link[rel="icon"]').href=LOGO;
+const $=s=>document.querySelector(s), esc=t=>String(t).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const wa=m=>`https://wa.me/${CONFIG.phone}?text=${encodeURIComponent(m)}`;
+const reduce=matchMedia("(prefers-reduced-motion:reduce)").matches, sleep=ms=>new Promise(r=>setTimeout(r,ms));
+const NAV=["Services","Work","Process","About","Contact"];
+$("#links").innerHTML=NAV.map(n=>`<a href="#${n.toLowerCase()}" class="hover:text-[#1B4F9C]">${n}</a>`).join("");
+$("#mob").innerHTML=NAV.map(n=>`<a href="#${n.toLowerCase()}">${n}</a>`).join("")+`<a class="wa grad text-white text-center py-2 rounded-full" data-m="Hi SK VortexWeb, I saw your website and I’d like a free demo for my business.">Free demo</a>`;
+$("#burger").onclick=e=>{const m=$("#mob"),o=m.classList.toggle("hidden");m.classList.toggle("flex",!o);e.currentTarget.setAttribute("aria-expanded",!o)};
+$("#mob").onclick=e=>{if(e.target.tagName==="A"){$("#mob").classList.add("hidden");$("#mob").classList.remove("flex")}};
+document.addEventListener("click",e=>{const a=e.target.closest('a[href^="#"]');if(!a)return;const t=document.getElementById(a.getAttribute("href").slice(1));if(!t)return;e.preventDefault();t.scrollIntoView({behavior:reduce?"auto":"smooth",block:"start"})});
+$("#yr").textContent=new Date().getFullYear();
+$("#owner").textContent=CONFIG.owner;
+$("#bio").innerHTML=CONFIG.bio.map(p=>`<p>${esc(p)}</p>`).join("");
+/* logo with SVG fallback */
+document.querySelectorAll(".logo").forEach(el=>{const i=new Image();i.alt="SK VortexWeb logo";i.src=LOGO;
+ i.onerror=()=>{el.innerHTML='<svg viewBox="0 0 40 40" width="100%" height="100%"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1B4F9C"/><stop offset="1" stop-color="#19C3B1"/></linearGradient></defs><rect width="40" height="40" fill="url(#lg)"/><text x="20" y="26" text-anchor="middle" font-size="16" font-weight="800" fill="#fff" font-family="sans-serif">SK</text></svg>'};el.appendChild(i)});
+/* ============ services ============ */
+const S=[
+ {t:"AI chat assistant",e:"🤖",c:"#19C3B1",d:"A friendly assistant on your site that answers customer questions any time of day.",get:["Chat window with your brand colours and logo","Answers about your hours, services and location","Hands serious customers to you on WhatsApp","Can be added to a new or existing website"],who:"Cafés, clinics, salons, gyms and any business that gets the same questions every day.",m:"I’d like an AI chat assistant added to my website"},
+ {t:"Landing pages",e:"🚀",c:"#1B4F9C",d:"One focused page that explains your offer and gets people to contact you.",get:["Clear headline, services and contact buttons","Designed for phones first","One-tap WhatsApp, call or email","Free first mockup to review"],who:"New businesses, event promotions and people who need to be found online quickly.",m:"I’d like a landing page for my business"},
+ {t:"Local business websites",e:"🏪",c:"#F59E0B",d:"A complete website for your shop, clinic or service, built around what your customers search for.",get:["Pages for services, gallery, hours and contact","Map and directions links","Search-friendly titles and descriptions","Easy to update later"],who:"Established local businesses that want to look professional online.",m:"I’d like a website for my local business"},
+ {t:"Mobile-first design",e:"📱",c:"#EC4899",d:"Most customers visit on a phone, so every layout starts there and scales up.",get:["Layouts tested from small phones upward","Large, easy-to-tap buttons","Readable text and good contrast","Smooth scrolling and light animations"],who:"Any business whose customers find them on a phone.",m:"I’d like a mobile-friendly design for my business"},
+ {t:"Speed optimisation",e:"⚡",c:"#8B5CF6",d:"Slow sites lose visitors. I trim your site so it opens fast.",get:["Lighter images and cleaner code","Faster first load","A short report of what changed","Better experience on slow connections"],who:"Owners with an existing site that feels slow.",m:"I’d like my website made faster"},
+ {t:"Website refresh",e:"✨",c:"#10B981",d:"Give an older website a fresh look and working buttons without starting from zero.",get:["Modern design in your brand colours","Updated content and contact options","Mobile-friendly layout","Optional AI chat assistant"],who:"Businesses whose website looks dated or doesn’t work well on phones.",m:"I’d like a refresh for my existing website"}];
+$("#svc").innerHTML=S.map((s,i)=>`<button class="card text-left bg-white rounded-3xl p-6 shadow border-b-4" style="border-color:${s.c}" data-i="${i}"><span class="w-14 h-14 rounded-2xl grid place-items-center text-3xl text-white" style="background:${s.c}">${s.e}</span><h3 class="font-extrabold text-lg mt-4">${s.t}</h3><p class="text-sm text-slate-600 mt-1">${s.d}</p><span class="text-sm font-bold mt-3 inline-block" style="color:${s.c}">See what you get ↓</span></button>`).join("");
+function showSvc(i,scroll){const s=S[i],d=$("#detail");d.style.borderColor=s.c;
+ d.innerHTML=`<h3 class="text-2xl font-extrabold">${s.e} ${s.t}</h3><p class="mt-2 text-slate-600">${s.d}</p><div class="grid md:grid-cols-2 gap-6 mt-5"><div><b>What you get</b><ul class="mt-2 space-y-1 list-disc ml-5">${s.get.map(g=>`<li>${g}</li>`).join("")}</ul></div><div><b>Who it’s for</b><p class="mt-2">${s.who}</p></div></div><a class="wa inline-block mt-6 font-bold px-6 py-3 rounded-full text-white" style="background:#128C7E" data-m="Hi SK VortexWeb, ${s.m}.">Ask about this on WhatsApp</a>`;
+ bindWA(d);if(scroll){d.scrollIntoView({behavior:reduce?"auto":"smooth",block:"center"});d.focus({preventScroll:true})}}
+$("#svc").onclick=e=>{const b=e.target.closest("button");if(b)showSvc(+b.dataset.i,true)};showSvc(0,false);
+/* ============ work ============ */
+const W=[
+ {n:"Dental Clinic",e:"🦷",a:"#0EA5E9",b:"#67E8F9",h:"Healthy smiles start here",sv:["Check-ups & cleaning","Whitening","Braces consult"],hr:"Mon–Sat 9:00–18:00",x:"dental clinic"},
+ {n:"Gym",e:"🏋️",a:"#EF4444",b:"#F59E0B",h:"Stronger every single day",sv:["Strength zone","Group classes","Personal coaching"],hr:"Daily 5:00–22:00",x:"gym"},
+ {n:"Bakery",e:"🥐",a:"#B45309",b:"#FBBF24",h:"Fresh bakes, warm cups",sv:["Coffee & tea","Fresh bread & cakes","Custom cake orders"],hr:"Daily 7:00–21:00",x:"bakery"},
+ {n:"Beauty Salon",e:"💇",a:"#EC4899",b:"#C084FC",h:"Look good, feel great",sv:["Haircuts & styling","Facials","Bridal makeup"],hr:"Tue–Sun 10:00–20:00",x:"salon"},
+ {n:"Consultant",e:"💼",a:"#1B4F9C",b:"#19C3B1",h:"Advice that moves you forward",sv:["One-to-one sessions","Workshops","Online consulting"],hr:"Mon–Fri 10:00–17:00",x:"consultant"},
+ {n:"Local Shop",e:"🛍️",a:"#10B981",b:"#A3E635",h:"Everything you need, nearby",sv:["Daily essentials","Home delivery","Order on WhatsApp"],hr:"Daily 8:00–22:00",x:"shop"}];
+$("#wk").innerHTML=W.map((w,i)=>`<button class="card text-left bg-white rounded-3xl overflow-hidden shadow" data-i="${i}"><svg viewBox="0 0 300 150" class="w-full" aria-hidden="true"><defs><linearGradient id="g${i}" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${w.a}"/><stop offset="1" stop-color="${w.b}"/></linearGradient></defs><rect width="300" height="150" fill="url(#g${i})"/><circle cx="250" cy="20" r="60" fill="#fff" opacity=".18"/><circle cx="30" cy="140" r="50" fill="#fff" opacity=".15"/><rect x="40" y="95" width="120" height="10" rx="5" fill="#fff" opacity=".7"/><rect x="40" y="115" width="80" height="10" rx="5" fill="#fff" opacity=".45"/><text x="210" y="105" font-size="64" text-anchor="middle">${w.e}</text></svg><div class="p-4 flex items-center"><b>${w.n}</b><span class="chip ml-auto">Sample build</span></div></button>`).join("");
+let lastFocus;
+function openM(i){const w=W[i];lastFocus=document.activeElement;$("#mTitle").textContent=w.n;
+ $("#mBody").innerHTML=`<div class="px-5 py-3 flex items-center font-extrabold" style="color:${w.a}">${w.e} ${esc(w.n)}<span class="ml-auto text-xs font-semibold text-slate-500">Services · Hours · Contact</span></div>
+ <div class="text-white px-6 py-12 text-center" style="background:linear-gradient(135deg,${w.a},${w.b})"><div class="text-6xl">${w.e}</div><h3 class="text-3xl font-extrabold mt-3">${w.h}</h3><p class="mt-2 opacity-90">Welcome! Tap below to book or ask us anything.</p><a class="wa inline-block mt-5 bg-white font-bold px-6 py-3 rounded-full" style="color:${w.a}" data-m="Hi SK VortexWeb, I like your ${w.x} style and want something similar.">Contact us</a></div>
+ <div class="p-6 grid sm:grid-cols-3 gap-4">${w.sv.map(s=>`<div class="rounded-2xl p-5 text-center" style="background:${w.a}18"><div class="text-3xl">${w.e}</div><b class="block mt-2">${s}</b></div>`).join("")}</div>
+ <div class="px-6 pb-4"><div class="rounded-2xl border p-5"><b>🕒 Opening hours</b><p class="mt-1">${w.hr}</p></div></div>
+ <div class="p-6 bg-slate-50 text-center"><p class="text-sm text-slate-500">This is a sample build, made as a concept for a ${w.x}.</p><a class="wa inline-block mt-3 text-white font-extrabold px-6 py-3 rounded-full" style="background:#128C7E" data-m="Hi SK VortexWeb, I like your ${w.x} style and want something similar.">I want one like this</a></div>`;
+ bindWA($("#mBody"));$("#modal").classList.remove("hidden");$("#mBody").scrollTop=0;$("#mClose").focus();document.body.style.overflow="hidden"}
+function closeM(){$("#modal").classList.add("hidden");document.body.style.overflow="";lastFocus&&lastFocus.focus()}
+$("#wk").onclick=e=>{const b=e.target.closest("button");if(b)openM(+b.dataset.i)};
+$("#mClose").onclick=closeM;$("#modal").onclick=e=>{if(e.target.id==="modal")closeM()};
+addEventListener("keydown",e=>{if(e.key==="Escape"){closeM();closeChat()}});
+/* process + faq */
+$("#steps").innerHTML=[["💬","Message us on WhatsApp","Tell me about your business."],["🎨","Free mockup","See your design before committing."],["🔧","Build and refine","We polish it together until it’s right."],["🚀","Launch with AI assistant","Go live with a chat assistant included."]].map((s,i)=>`<li class="bg-white rounded-3xl p-6 shadow"><span class="grad text-white w-10 h-10 rounded-full grid place-items-center font-extrabold">${i+1}</span><div class="text-3xl mt-3">${s[0]}</div><b class="block mt-1">${s[1]}</b><p class="text-sm text-slate-600">${s[2]}</p></li>`).join("");
+$("#faqL").innerHTML=[["How long does it take?","It depends on the project. Message me on WhatsApp and I’ll confirm a timeline once I know what you need."],["Is the mockup free?","Yes. Your first mockup is free, so you can see the design before deciding."],["Can I get changes later?","Yes. Just message me on WhatsApp and we’ll update it."],["What does the AI assistant do?","It answers common customer questions on your site at any hour, and passes serious enquiries to you on WhatsApp."],["Do you build for my kind of business?","Yes, for local businesses of all kinds: cafés, clinics, gyms, salons, shops, consultants and more."]].map(f=>`<details class="bg-white rounded-2xl p-4 shadow-sm"><summary class="font-bold">${f[0]}</summary><p class="mt-2 text-slate-600">${f[1]}</p></details>`).join("");
+/* contact links */
+function bindWA(r=document){r.querySelectorAll(".wa").forEach(a=>{a.href=wa(a.dataset.m);a.target="_blank";a.rel="noopener"})}
+bindWA();document.querySelectorAll(".ig").forEach(a=>a.href=CONFIG.instagram);
+document.querySelectorAll(".mail").forEach(a=>a.href=`mailto:${CONFIG.email}?subject=Free%20demo%20request&body=${encodeURIComponent("Hi SK VortexWeb, I saw your website and I’d like a free demo for my business.")}`);
+document.querySelectorAll(".mail:not(.px-6)").forEach(a=>a.textContent=CONFIG.email);
+/* ============ hero background: animated niche scenes (+ optional muted video) ============ */
+let scene=0;const SC=[{h:35,e:["☕","🥐","🍰","🍞"]},{h:195,e:["🦷","✨","🪥","😁"]},{h:5,e:["🏋️","💪","🔥","🏃"]},{h:315,e:["💇","💅","✨","💄"]},{h:200,e:["💼","📈","💡","🎯"]},{h:150,e:["🛍️","🧺","🏷️","🛒"]}];
+(function(){const c=$("#cv"),x=c.getContext("2d");let w,h,t=0,P=[];
+ function mk(i,fresh){return{x:Math.random()*w,y:fresh?Math.random()*h:h+30,s:Math.random()*.5+.25,z:Math.random()*20+20,k:i,o:Math.random()*6}}
+ function rs(){w=c.width=c.offsetWidth;h=c.height=c.offsetHeight;P=Array.from({length:Math.min(22,Math.round(w/45))},(_,i)=>mk(i,1))}
+ function draw(){x.clearRect(0,0,w,h);const cx=w*.75,cy=h*.5,H=SC[scene%SC.length].h;
+  for(let i=0;i<9;i++){x.beginPath();x.strokeStyle=`hsla(${H+i*8},80%,45%,${.5-i*.04})`;x.lineWidth=2;
+   x.ellipse(cx,cy,60+i*38,(60+i*38)*.42,t*(.15+i*.02)+i,0,Math.PI*2);x.stroke()}
+  const g=x.createRadialGradient(cx,cy,10,cx,cy,w*.45);g.addColorStop(0,`hsla(${H},90%,55%,.16)`);g.addColorStop(1,"transparent");x.fillStyle=g;x.fillRect(0,0,w,h);
+  x.textAlign="center";P.forEach(p=>{p.y-=p.s;p.x+=Math.sin(t*2+p.o)*.4;if(p.y<-40)Object.assign(p,mk(p.k,0));
+   x.globalAlpha=.55;x.font=p.z+"px serif";x.shadowColor=`hsl(${H},90%,60%)`;x.shadowBlur=14;x.fillText(SC[scene%SC.length].e[p.k%4],p.x,p.y);x.shadowBlur=0;x.globalAlpha=1});
+  t+=.01;if(!reduce)requestAnimationFrame(draw)}
+ addEventListener("resize",rs);rs();draw();
+ // optional real video: loads only after the page has loaded, muted, looping, skipped for reduced motion / data saver
+ addEventListener("load",()=>{if(!CONFIG.heroVideos.length||reduce||(navigator.connection&&navigator.connection.saveData))return;
+  const v=document.createElement("video");v.src=CONFIG.heroVideos[0];v.muted=true;v.loop=true;v.playsInline=true;v.autoplay=true;v.setAttribute("aria-hidden","true");
+  v.className="absolute inset-0 w-full h-full object-cover opacity-30";v.onplaying=()=>0;c.parentElement.insertBefore(v,c);v.play().catch(()=>v.remove())})})();
+/* ============ hero chat demo (looping) ============ */
+const D=[["Bakery",[["Are you open on Sunday?","Yes! We’re open 7am–9pm every day, including Sunday. ☕"],["Can I order a cake?","Of course. Tell me the flavour and date, and the owner will confirm."]]],
+ ["Dental Clinic",[["Do you do teeth whitening?","Yes, we do. I can pass your details to the clinic for a visit."],["What are your timings?","Mon–Sat, 9am–6pm. Want to book a slot?"]]],
+ ["Gym",[["Do you have morning classes?","We do! Group classes run from 6am. Want the schedule?"],["Can I try before joining?","Yes, ask for a trial session. I’ll connect you now."]]],
+ ["Beauty Salon",[["Do you do bridal makeup?","Yes! Our artists handle bridal looks. Shall I share the details?"],["Is booking needed?","It helps. I can send your request to the team right now."]]]];
+(async function(){const el=$("#demo");let k=0;
+ const add=(c,h)=>{const d=document.createElement("div");d.className="msg "+c;d.innerHTML=h;el.appendChild(d);while(el.children.length>6)el.firstChild.remove();return d};
+ while(true){scene=k%D.length;const [n,cv]=D[k++%D.length];$("#dName").textContent=n;el.innerHTML="";
+  for(const [q,a] of cv){await sleep(700);const u=add("u","");for(const ch of q){u.textContent+=ch;await sleep(reduce?0:35)}
+   await sleep(500);const ty=add("b",'<span class="dots"><span></span><span></span><span></span></span>');await sleep(1100);ty.innerHTML=esc(a)}
+  await sleep(700);add("b",`<a class="wa" data-m="Hi SK VortexWeb, I’d like an AI chat assistant added to my website." >Open in WhatsApp</a>`);bindWA(el);await sleep(3200)}})();
+/* ============ floating chat ============ */
+const C={name:"",last:"",hist:[]};
+const R=a=>a[Math.floor(Math.random()*a.length)];
+const WL=(m,t)=>`<a href="${wa(m)}" target="_blank" rel="noopener">${t}</a>`;
+const intents=[
+ [/\b(fuck|shit|bitch|bastard|sex|porn|idiot|stupid)\b/i,()=>["Let’s keep things friendly. I’m happy to help with questions about websites and the AI assistant.","I can’t help with that, but I’d love to answer anything about SK VortexWeb."]],
+ [/my name is ([a-z ]{2,20})|i am ([a-z]{2,20})$|i’m ([a-z]{2,20})$/i,m=>{C.name=(m[1]||m[2]||m[3]).trim().split(" ")[0];C.name=C.name[0].toUpperCase()+C.name.slice(1);return[`Nice to meet you, ${esc(C.name)}! How can I help with your business today?`,`Great to meet you, ${esc(C.name)}. Looking for a website, an AI assistant, or both?`]}],
+ [/\b(price|cost|rate|charge|fee|how much|quote|budget|package|cheap|afford)/i,()=>[`Pricing depends on your project, so I don’t quote figures here. ${WL("Hi SK VortexWeb, I’d like an exact quote for my business.","Message the developer on WhatsApp for an exact quote")}.`,`Every project is different. ${WL("Hi SK VortexWeb, I’d like an exact quote for my business.","Ask on WhatsApp for an exact quote")} and you’ll get a clear answer directly.`]],
+ [/\b(how long|deliver|deadline|days|weeks|when will|timeline|time to build)/i,()=>[`Timelines depend on the project. ${WL("Hi SK VortexWeb, how long would my website take?","Ask on WhatsApp")} and Sri Kumaran will confirm.`,`I can’t promise exact dates here, since it depends on what you need. ${WL("Hi SK VortexWeb, how long would my website take?","WhatsApp the developer")} for a clear timeline.`]],
+ [/\b(who (are|r) you|your name|what are you|are you (a )?(bot|ai|human|real))/i,()=>["I’m VortexWeb AI, the assistant of SK VortexWeb. I answer questions about websites and our services.","My name is VortexWeb AI. I help visitors of SK VortexWeb, and real people take over on WhatsApp."]],
+ [/\b(who (built|made|created|owns|developed)|developer|founder|owner|sri|kumaran)/i,()=>["This page was built by Sri Kumaran, the developer behind SK VortexWeb. Messages on WhatsApp go straight to him.","Sri Kumaran is the founder and developer of SK VortexWeb. He talks to every customer directly."]],
+ [/\b(time|clock)\b/i,()=>[`It’s ${new Date().toLocaleTimeString([], {hour:"2-digit",minute:"2-digit"})} on your device right now.`,`Your device shows ${new Date().toLocaleTimeString([], {hour:"2-digit",minute:"2-digit"})}.`]],
+ [/\b(date|today|day is it)\b/i,()=>[`Today is ${new Date().toLocaleDateString([], {weekday:"long",year:"numeric",month:"long",day:"numeric"})}.`,`By your device, it’s ${new Date().toLocaleDateString([], {weekday:"long",day:"numeric",month:"long"})}.`]],
+ [/\b(demo|mockup|free|trial|start|get started|begin)/i,()=>[`You get a free first mockup. ${WL("Hi SK VortexWeb, I saw your website and I’d like a free demo for my business.","Tap here to request it on WhatsApp")}.`,`Easy: message on WhatsApp, share your business details, and see your mockup first. ${WL("Hi SK VortexWeb, I saw your website and I’d like a free demo for my business.","Start now")}.`]],
+ [/\b(service|offer|what do you (do|build)|build|website|landing|page|design)/i,()=>["We build landing pages, local business websites, mobile-first designs, speed fixes and refreshes, plus an AI chat assistant. Tap a card in Services for details.","Fast, mobile-first websites for local businesses, with an optional AI chat assistant. See the Services section for exactly what’s included."]],
+ [/\b(chat ?bot|assistant|ai)\b/i,()=>["The AI assistant sits on your website and answers customer questions 24/7, then sends serious enquiries to you on WhatsApp.","It’s like a helpful receptionist on your site, always online. "+WL("Hi SK VortexWeb, I’d like an AI chat assistant added to my website.","Ask about adding one")+"."]],
+ [/\b(change|edit|update|modify)/i,()=>["Yes, changes later are welcome. Just message on WhatsApp and they’ll be updated.","Absolutely. Send your change request on WhatsApp whenever you need."]],
+ [/\b(contact|whatsapp|call|phone|email|instagram|reach|talk)/i,()=>[`WhatsApp is fastest: ${WL("Hi SK VortexWeb, I have a question.","chat with the developer")}. You can also find us on Instagram @skvortexweb or at ${CONFIG.email}.`]],
+ [/\b(thank|thanks|thx)/i,()=>["You’re welcome! Anything else?","Happy to help! Let me know if you have more questions."]],
+ [/\b(bye|goodbye|see you)/i,()=>["Bye! Come back anytime. 👋","Take care! Message on WhatsApp whenever you’re ready."]],
+ [/\b(hi|hello|hey|hola|vanakkam|good (morning|evening|afternoon))\b/i,()=>{const n=C.name?`, ${esc(C.name)}`:"";return[`Hello${n}! I’m VortexWeb AI. How can I help?`,`Hi${n}! Ask me about our websites or the AI assistant.`,`Hey${n}! What would you like to know?`]}]];
+function local(q){for(const [re,fn] of intents){const m=q.match(re);if(m){const o=fn(m).filter(x=>x!==C.last);const r=R(o.length?o:fn(m));return r}}
+ return R([`I’m not sure about that one. ${WL("Hi SK VortexWeb, I have a question.","Ask the developer on WhatsApp")} for a proper answer.`,`Good question, but that’s best answered by a person. ${WL("Hi SK VortexWeb, I have a question.","Message on WhatsApp")}.`])}
+async function reply(q){ // real AI first, local engine as fallback
+ if(CONFIG.chatEndpoint){try{const ac=new AbortController(),t=setTimeout(()=>ac.abort(),6000);
+  const r=await fetch(CONFIG.chatEndpoint,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({message:q,history:C.hist.slice(-6)}),signal:ac.signal});clearTimeout(t);
+  const j=await r.json();if(r.ok&&j.reply)return esc(j.reply).slice(0,600)+" "+WL("Hi SK VortexWeb, I have a question.","WhatsApp")}catch(e){}}
+ return local(q)}
+const log=$("#log");
+function bub(c,h){const d=document.createElement("div");d.className="msg "+c;d.innerHTML=h;log.appendChild(d);log.scrollTop=log.scrollHeight;return d}
+async function send(q){q=q.trim();if(!q)return;bub("u",esc(q));C.hist.push({role:"user",content:q});
+ const ty=bub("b",'<span class="dots"><span></span><span></span><span></span></span>');
+ const [r]=await Promise.all([reply(q),sleep(600+Math.random()*600)]);ty.innerHTML=r;C.last=r;C.hist.push({role:"assistant",content:r.replace(/<[^>]+>/g,"")});log.scrollTop=log.scrollHeight}
+const QR=["What do you build?","How do I get a free demo?","Who built this?","What’s the price?"];
+$("#chips").innerHTML=QR.map(q=>`<button class="shrink-0 text-xs font-semibold border border-[#1B4F9C] text-[#1B4F9C] rounded-full px-3 py-1.5 bg-white">${q}</button>`).join("");
+$("#chips").onclick=e=>{if(e.target.tagName==="BUTTON")send(e.target.textContent)};
+$("#cf").onsubmit=e=>{e.preventDefault();const v=$("#ci").value;$("#ci").value="";send(v)};
+function openChat(){$("#chat").classList.remove("hidden");$("#chat").classList.add("flex");$("#chatBtn").classList.add("hidden");
+ if(!log.children.length)bub("b","Hi! I’m VortexWeb AI, the assistant of SK VortexWeb. Ask me about websites, the AI assistant or how to get a free demo.");$("#ci").focus()}
+function closeChat(){$("#chat").classList.add("hidden");$("#chat").classList.remove("flex");$("#chatBtn").classList.remove("hidden")}
+$("#chatBtn").onclick=openChat;$("#cClose").onclick=closeChat;
+</script>
+</body>
+</html>
